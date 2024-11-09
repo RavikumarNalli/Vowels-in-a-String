@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=;, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Cut the String Using for Loop (Without slice)</h3>
+
+<script>
+    function cutString(str, start, end) {
+  let result = '';
+
+  for (let i = start; i < end && i < str.length; i++) {
+    result += str[i];
+  }
+
+  return result;
+}
+
+// Example usage
+const originalStr = "JavaScript is awesome!";
+console.log("Cut string:", cutString(originalStr, 0, 10)); // Cuts from index 0 to 10
+
+</script>
+
+</body>
+</html>

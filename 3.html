@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Remove Spaces Without Using trim()</h3>
+
+    <script>
+        function removeSpaces(str) {
+  let result = '';
+
+  for (let char of str) {
+    if (char !== ' ') {
+      result += char;
+    }
+  }
+
+  return result;
+}
+
+// Example usage
+const strWithSpaces = "  Remove  all  spaces ";
+console.log("String without spaces:", removeSpaces(strWithSpaces));
+
+    </script>
+</body>
+</html>
